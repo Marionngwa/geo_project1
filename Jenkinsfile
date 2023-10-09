@@ -3,17 +3,17 @@ pipeline{
     stages{
       stage('maven clean'){
         steps{
-            sh 'opt/maven/bin/mvn clean'
+            sh '/opt/maven/bin/mvn clean'
         }
       }
       stage('maven install'){
         steps{
-            sh 'opt/maven/bin/maven install'
+            sh '/opt/maven/bin/maven install'
         }
       }
       stage('maven package'){
         steps{ 
-            sh 'opt/maven/bin/maven package'
+            sh '/opt/maven/bin/maven package'
         }
       }
     }
